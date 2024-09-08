@@ -1,0 +1,101 @@
+@charset "ISO-8859-1";
+
+/* Container for the entire page */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img.logo {
+    width: 80px;
+    margin: 0 20px;
+    vertical-align: middle;
+}
+
+.header h1 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Billing summary section */
+.billing-summary {
+    margin-bottom: 30px;
+}
+
+.billing-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.billing-summary th, .billing-summary td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.billing-summary th {
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+.billing-summary td {
+    color: #666;
+}
+
+.total-amount {
+    color: #FF5722; /* Swiggy's color */
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit button styling */
+.submit-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #FF5722; /* Swiggy's color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #E64A19; /* Darker shade */
+}

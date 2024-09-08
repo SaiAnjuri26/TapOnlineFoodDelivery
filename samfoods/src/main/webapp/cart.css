@@ -1,0 +1,214 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif, "Segoe UI Emoji", "Apple Color Emoji";
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Content Container */
+.content-container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Title */
+h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Cart Items Container */
+.cart-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Cart Item */
+.cart-item {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Image section */
+.cart-item-image {
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.cart-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+}
+
+/* Details section */
+.cart-item-details {
+    padding: 15px;
+    flex: 1;
+}
+
+.cart-item-details h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.cart-item-details p {
+    margin: 0 0 10px;
+}
+
+/* Actions section */
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between forms */
+    padding: 15px;
+    min-width: 300px;
+}
+
+.action-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-wrapper {
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Update Button */
+input[type="submit"][value="Update"] {
+    background-color: #ff8c00; /* Dark Orange color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"][value="Update"]:hover {
+    background-color: #e67e00; /* Darker orange on hover */
+    transform: scale(1.05);
+}
+
+/* Remove Button */
+input[type="submit"][value="Remove"] {
+    background-color: #dc3545; /* Red color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"][value="Remove"]:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: scale(1.05);
+}
+
+/* Add More Button */
+.add-more-button {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-more-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Cart Summary */
+.cart-summary {
+    text-align: center; /* Center text */
+    margin-top: 20px;
+}
+
+.cart-summary .total {
+    font-size: 1.5em;
+    font-weight: bold;
+    color:  #ff5722; /* Blue color */
+}
+
+/* Payment Mode Section */
+.payment-mode {
+    margin-top: 40px;
+    text-align: center; /* Center content */
+}
+
+.payment-options {
+    display: flex;
+    justify-content: center; /* Center radio buttons horizontally */
+    gap: 20px; /* Space between radio buttons */
+}
+
+.payment-options label {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.payment-options input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Proceed To Pay Button */
+.payment-submit {
+    background-color: #28a745; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.payment-submit:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05);
+}

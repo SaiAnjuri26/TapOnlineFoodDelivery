@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center; /* Center Billing Information title */
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.billing-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.billing-summary {
+    flex: 1;
+}
+
+.items-title {
+    color: #ff5722; /* Change Your Items to blue */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.cart-item-image {
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.total-amount {
+    color: #ff5722;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center; /* Center Total Amount */
+}
+
+.address-section {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.address-fields {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.confirm-button, .cancel-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-button {
+    background-color: green; /* Green Confirm Order */
+    color: #fff;
+    border: none;
+}
+
+.confirm-button:hover {
+    background-color: #28a745;
+}
+
+.cancel-button {
+    background-color: orange; /* Orange Cancel Order */
+    color: #fff;
+    border: none;
+}
+
+.cancel-button:hover {
+    background-color: #ff9800;
+}
